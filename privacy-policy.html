@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>听力自测 · 隐私政策</title>
+<style>
+:root { color-scheme: light dark; }
+body {
+  max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  color: #1c1c1e; background: #fff; word-break: break-word;
+}
+@media (prefers-color-scheme: dark) { body { color: #e8e6e3; background: #161514; } }
+h1 { font-size: 1.7rem; margin: 0 0 .4rem; }
+h2 { font-size: 1.18rem; margin: 2.2rem 0 .6rem; }
+hr { border: 0; border-top: 1px solid rgba(128,128,128,.25); margin: 2rem 0; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .93rem; }
+th, td { border: 1px solid rgba(128,128,128,.28); padding: .55rem .7rem; text-align: left; vertical-align: top; }
+th { background: rgba(128,128,128,.1); font-weight: 600; }
+ul { padding-left: 1.3rem; }
+li { margin: .3rem 0; }
+a { color: #c26a17; }
+@media (prefers-color-scheme: dark) { a { color: #ffb95a; } }
+</style>
+</head>
+<body>
+<h1>听力自测 · 隐私政策</h1>
+
+<p><strong>生效日期：2026 年 8 月 26 日</strong></p>
+<p><strong>版本：1.0</strong></p>
+
+<h2>一句话概括</h2>
+
+<p>这个应用不收集你的任何数据，也不向任何服务器发送任何内容。它没有联网功能。</p>
+
+<h2>我们不做的事</h2>
+
+<p>以下每一条都不是承诺，而是这个应用当前版本的技术事实——它的代码里不存在任何网络请求能力：</p>
+
+<ul>
+<li>不收集个人信息（姓名、邮箱、手机号、身份证件等一概不要）</li>
+<li>不收集设备标识符（IDFA、IDFV、设备名等）</li>
+<li>不使用任何第三方分析、统计或崩溃收集服务</li>
+<li>不使用任何广告 SDK</li>
+<li>不追踪你在其他应用或网站上的活动</li>
+<li>不把任何数据传输到我们或第三方的服务器</li>
+<li>不需要注册账号</li>
+</ul>
+
+<h2>应用在你设备上保存了什么</h2>
+
+<p>这些数据只存在于你这台设备的应用沙盒内。我们不会把它们同步到任何云端；它们会像其他应用的数据一样被包含在系统的加密设备备份中——那是 iOS 的统一行为，我们既不能也不会读取备份内容。</p>
+
+<table>
+<tr><th>数据</th><th>用途</th><th>位置</th></tr>
+<tr><td>听力测试记录（日期、各频率听阈、所用耳机型号、测量时的身体状况问答）</td><td>展示历史与变化趋势</td><td>应用文稿目录</td></tr>
+<tr><td>声学校准数据（若你完成过校准）</td><td>修正测量结果的绝对零点</td><td>应用支持目录</td></tr>
+<tr><td>复测提醒开关</td><td>记住你的偏好</td><td>系统偏好设置</td></tr>
+</table>
+
+<p>删除应用时，以上数据随之删除。你也可以在应用内「设置 → 数据 → 清空全部记录」随时手动删除。</p>
+
+<h2>权限说明</h2>
+
+<h3>麦克风</h3>
+
+<p>用于在测试开始前测量环境噪声，判断当前房间是否安静到可以进行听力测试。</p>
+
+<p><strong>录音内容不会被保存，也不会离开设备。</strong> 应用只从声音信号中计算出一个响度数值（分贝），随即丢弃音频本身。麦克风仅在环境检查页面开启，离开该页面立即关闭。</p>
+
+<h3>健康（HealthKit）</h3>
+
+<p><strong>写入</strong>：仅在你主动点击「保存到健康 App」时，把本次测试结果以听力图（HKAudiogramSample）的形式写入健康 App 的听力分类。不点击就不写入。</p>
+
+<p><strong>读取</strong>：用于对照你已有的听力测试记录。</p>
+
+<p><strong>Apple 的健康数据规则我们严格遵守</strong>：健康数据不会被用于广告、营销或数据挖掘，也不会提供给任何第三方。事实上它根本不会离开你的设备。</p>
+
+<h3>通知</h3>
+
+<p>用于在距上次测试满 12 个月时提醒你复测。你可以在「设置 → 复测提醒」中随时关闭。通知内容在本机生成，不经过任何服务器。</p>
+
+<h2>关于广告</h2>
+
+<p><strong>当前版本不含任何广告，也未集成任何广告 SDK。</strong></p>
+
+<p>应用界面中标注「广告位」的区域是预留的占位，未加载任何内容、不发起任何请求。若未来版本引入广告，我们会在引入前更新本政策，并在应用内明确告知——届时也绝不会将健康相关数据用于广告用途。</p>
+
+<h2>未成年人</h2>
+
+<p>本应用的判定标准基于成人听力数据，不适用于未满 18 周岁的人。应用在开始测试前会询问年龄，未满 18 周岁将无法继续。我们不会有意收集未成年人的任何信息（事实上我们不收集任何人的信息）。</p>
+
+<h2>这不是医疗器械</h2>
+
+<p>本应用不是医疗器械，不能用于诊断听力疾病，也不能替代听力专业人士的检查与意见。测量结果仅供参考。如果你有听力方面的疑虑，请咨询耳鼻喉科医生或听力学专业人员。</p>
+
+<h2>政策变更</h2>
+
+<p>本政策若有实质性变更（例如引入任何形式的数据收集），我们会更新本页面的版本号与生效日期，并在应用更新说明中注明。</p>
+
+<h2>联系我们</h2>
+
+<p>如对本政策有任何疑问，请联系：</p>
+
+<p><strong>北京灵可司文化科技有限公司</strong></p>
+<p>邮箱：support@linkos.cc</p>
+
+<hr>
+
+<p><em>本政策的中文版本为准。</em></p>
+
+</body>
+</html>

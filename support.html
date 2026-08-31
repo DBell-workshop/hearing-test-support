@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>听力自测 · 支持</title>
+<style>
+:root { color-scheme: light dark; }
+body {
+  max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  color: #1c1c1e; background: #fff; word-break: break-word;
+}
+@media (prefers-color-scheme: dark) { body { color: #e8e6e3; background: #161514; } }
+h1 { font-size: 1.7rem; margin: 0 0 .3rem; }
+h2 { font-size: 1.15rem; margin: 2.2rem 0 .5rem; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .3rem; }
+.sub { color: #8a8a8e; margin: 0 0 2rem; }
+hr { border: 0; border-top: 1px solid rgba(128,128,128,.25); margin: 2.2rem 0; }
+a { color: #c26a17; }
+@media (prefers-color-scheme: dark) { a { color: #ffb95a; } }
+.box { border: 1px solid rgba(128,128,128,.28); border-radius: 10px; padding: 1rem 1.1rem; margin: 1.2rem 0; }
+.warn { border-color: rgba(200,80,60,.5); }
+ul { padding-left: 1.3rem; }
+li { margin: .35rem 0; }
+</style>
+</head>
+<body>
+
+<h1>听力自测 · 支持</h1>
+<p class="sub">北京灵可司文化科技有限公司</p>
+
+<div class="box">
+<p><strong>需要帮助？</strong>写信到 <a href="mailto:support@linkos.cc">support@linkos.cc</a>。请附上你的 iOS 版本、耳机型号，以及问题出现在哪一步。</p>
+</div>
+
+<hr>
+
+<h2>常见问题</h2>
+
+<h3>为什么结果页写着「未完成声学校准，数值仅供参考」？</h3>
+<p>因为这是实话。相对刻度是准的——差 5 分贝就是差 5 分贝，所以<strong>曲线形状</strong>（哪个频段相对更弱）和<strong>多次测试之间的变化趋势</strong>都可信，系统误差在做差时会被抵消。</p>
+<p>不准的是绝对零点：0 dB HL 到底对应多响，取决于你那副耳机的声学特性，我们只能估。如果你手上有一份可信的实测听力图（例如 AirPods 的官方听力测试结果），可以在「设置 → 声学校准」里导入，把零点定下来。</p>
+
+<h3>为什么必须把系统音量调到最大？</h3>
+<p>测试音的大小是按音量 100% 反推出来的。音量降一半，实际放出去的声音就比标称值低约 6 分贝，而屏幕上没有任何迹象——你会拿到一条「听力下降」的曲线，下降的其实是音量滑块。</p>
+<p>iOS 有个坑：<strong>没有声音在播放时，音量键调的是铃声音量</strong>，不是媒体音量。请在播放参考音的同时按音量键。</p>
+
+<h3>哪些耳机能用？</h3>
+<p>取决于耳机怎么和耳朵耦合，跟牌子无关。入耳密封式最合适；罩耳头戴式的参考基准与入耳式不同，结果会有系统性偏移；开放半入耳式不封闭耳道，低频会漏出去；骨传导绕过外耳和中耳，测到的根本不是气导听阈，不适用。</p>
+<p>应用内「设置 → 支持的耳机」有完整清单。不在清单内的耳机仍然可以测，但我们无法判断它属于哪一类，结果会被标注为可能有明显偏差。</p>
+
+<h3>测试中途能暂停吗？</h3>
+<p>可以。环境变吵、音量被改、切到后台，或者你手动按暂停，已测的部分都会保留，条件恢复后接着测。</p>
+<p>但有 10 分钟上限。超过之后已测数据会作废——离开太久，注意力已重置、耳塞可能被无意识动过、环境也可能变了，那时接着测，前半场和后半场就不是同一次测量。</p>
+<p><strong>摘下耳机是例外，直接作废。</strong>重新戴上就是另一副声学耦合了，前后数据不可比。</p>
+
+<h3>环境检查显示「无法检测环境噪声」怎么办？</h3>
+<p>AirPods 以高音质模式连接时没有可用的麦克风输入（要用它的麦克风得切到通话模式，那会把音质降到 16 kHz，对测听是灾难）。这种情况下我们会用手机自带麦克风；如果仍然拿不到读数，会如实告诉你测不了，并允许你自行确认环境后继续。</p>
+
+<h3>我的数据存在哪里？</h3>
+<p>只存在你这台设备上。这个应用不联网——代码里没有任何网络请求能力。删除应用时数据随之删除，也可以在「设置 → 数据」里随时手动清空。详见<a href="./privacy-policy.html">隐私政策</a>。</p>
+
+<h3>结果异常，我该怎么办？</h3>
+<div class="box warn">
+<p>如果出现以下任一情况，请<strong>尽快就医</strong>，不要依赖本应用的结果：</p>
+<ul>
+<li>突然发生的听力下降</li>
+<li>耳痛、流脓或耳闷胀感</li>
+<li>眩晕或平衡障碍</li>
+<li>听力时好时坏</li>
+<li>只有一只耳朵变差，或只有一侧耳鸣</li>
+</ul>
+<p>本应用只测听阈，识别不出这些问题。</p>
+</div>
+
+<hr>
+
+<h2>重要声明</h2>
+<p>本应用不是医疗器械，不能用于诊断听力疾病，也不能替代听力专业人士的检查与意见。测量结果仅供参考。如果你对自己的听力有疑虑，请咨询耳鼻喉科医生或听力学专业人员。</p>
+
+<hr>
+<p><a href="./privacy-policy.html">隐私政策</a> · <a href="mailto:support@linkos.cc">support@linkos.cc</a></p>
+
+</body>
+</html>
