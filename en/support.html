@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearing Check · Support</title>
+<style>
+:root { color-scheme: light dark; }
+body {
+  max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  color: #1c1c1e; background: #fff; word-break: break-word;
+}
+@media (prefers-color-scheme: dark) { body { color: #e8e6e3; background: #161514; } }
+h1 { font-size: 1.7rem; margin: 0 0 .3rem; }
+h2 { font-size: 1.15rem; margin: 2.2rem 0 .5rem; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .3rem; }
+.sub { color: #8a8a8e; margin: 0 0 2rem; }
+hr { border: 0; border-top: 1px solid rgba(128,128,128,.25); margin: 2.2rem 0; }
+a { color: #c26a17; }
+@media (prefers-color-scheme: dark) { a { color: #ffb95a; } }
+.box { border: 1px solid rgba(128,128,128,.28); border-radius: 10px; padding: 1rem 1.1rem; margin: 1.2rem 0; }
+.warn { border-color: rgba(200,80,60,.5); }
+ul { padding-left: 1.3rem; }
+li { margin: .35rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Hearing Check · Support</h1>
+<p class="sub">Beijing Lingkesi Cultural Technology Co., Ltd · <a href="../support.html">中文</a></p>
+
+<div class="box">
+<p><strong>Need help?</strong> Write to <a href="mailto:support@linkos.cc">support@linkos.cc</a>. Please include your iOS version, which headphones you are using, and which step the problem happens at.</p>
+</div>
+
+<hr>
+
+<h2>Frequently asked</h2>
+
+<h3>The left / right check says there is a problem, and now I can't change my answer</h3>
+<div class="box warn">
+<p>This was a defect in version 1.0.1, and we're sorry about it. Once you answered "I heard nothing" for one side, there was no way back to change it — even if you played the tone again and did hear it, the bottom of the screen stayed stuck on "Finish the left / right check first".</p>
+<p><strong>Fixed in 1.0.2. Please update in the App Store.</strong> After updating, tap that side's circle to play again and you can answer afresh, without leaving the screen.</p>
+<p>If you can't update right now: go back to the start screen and tap Start Test again. The check resets and you can answer again. Nothing measured is lost — this step happens before the test begins.</p>
+</div>
+
+<h3>Why does the result screen say it is not acoustically calibrated?</h3>
+<p>Because that is the truth. The relative scale is accurate — a 5 dB difference really is 5 dB. So <strong>the shape of the curve</strong> (which frequencies are relatively weaker) and <strong>the change between repeated tests</strong> can both be trusted: systematic error cancels out when you take a difference.</p>
+<p>What isn't accurate is the absolute zero point. How loud 0 dB HL actually is depends on the acoustics of your particular headphones, and we can only estimate it. If you have a trustworthy measured audiogram — the result of Apple's Hearing Test with AirPods Pro, for example — you can import it under Settings → Calibration to pin that zero down.</p>
+
+<h3>Why do I have to turn the system volume all the way up?</h3>
+<p>Tone levels are calculated backwards from 100% volume. At half volume the sound that actually reaches your ear is about 6 dB below its nominal level, and nothing on screen says so — you would get a curve showing "hearing loss" when what dropped was the volume slider.</p>
+<p>One iOS trap: <strong>when nothing is playing, the volume buttons change the ringer volume</strong>, not media volume. Press them while a reference tone is playing.</p>
+
+<h3>Which headphones can I use?</h3>
+<p>What matters is how the headphones couple to your ear, not the brand. Sealed in-ear is the best fit. Over-ear headphones have a different reference baseline than in-ear ones, so results shift systematically. Open earbuds don't seal the canal and let low frequencies leak out. Bone conduction bypasses the outer and middle ear entirely, so what it measures is not an air-conduction threshold at all — it can't be used.</p>
+<p>There is a full list in the app under Settings → Supported headphones. Headphones not on the list can still be used, but we can't tell which category they fall into, so the result is marked as possibly well off.</p>
+
+<h3>Can I pause in the middle of a test?</h3>
+<p>Yes. If the room gets loud, the volume changes, the app goes to the background, or you tap pause yourself, everything measured so far is kept and you can carry on once conditions are back.</p>
+<p>There is a 10-minute limit, though. After that the measurements so far are discarded: with that long away, your attention has reset, the ear tips may have been moved without you noticing, and the room may have changed. Continuing then would mean the first and second halves are no longer the same measurement.</p>
+<p><strong>Taking the headphones off is the exception — that discards the test immediately.</strong> Putting them back on creates a different acoustic coupling, and the data before and after is not comparable.</p>
+
+<h3>The room check says it can't measure ambient noise</h3>
+<p>When AirPods are connected in high-quality audio mode, no microphone input is available. (Using their microphone requires switching to call mode, which drops audio quality to 16 kHz — a disaster for a hearing test.) In that case we fall back to the phone's own microphone. If there is still no reading, the app tells you plainly that it can't measure, and lets you confirm the room is quiet yourself and continue.</p>
+
+<h3>Where is my data stored?</h3>
+<p>Only on your device. This app never goes online — its code contains no networking capability at all. Deleting the app deletes the data, and you can clear it any time under Settings → Data. See the <a href="./privacy-policy.html">Privacy Policy</a> for details.</p>
+
+<h3>My result looks abnormal. What should I do?</h3>
+<div class="box warn">
+<p>If any of the following applies, <strong>see a doctor promptly</strong> rather than relying on this app's result:</p>
+<ul>
+<li>Sudden hearing loss</li>
+<li>Ear pain, discharge, or a blocked feeling</li>
+<li>Dizziness or balance problems</li>
+<li>Hearing that comes and goes</li>
+<li>Only one ear getting worse, or ringing in one ear only</li>
+</ul>
+<p>This app only measures thresholds. It cannot detect any of these.</p>
+</div>
+
+<hr>
+
+<h2>Important</h2>
+<p>This app is not a medical device. It cannot diagnose hearing conditions and does not replace an examination by a hearing professional. Results are for reference only. If you have concerns about your hearing, consult an ENT physician or an audiologist.</p>
+
+<hr>
+<p><a href="./privacy-policy.html">Privacy Policy</a> · <a href="mailto:support@linkos.cc">support@linkos.cc</a> · <a href="../support.html">中文</a></p>
+
+</body>
+</html>
