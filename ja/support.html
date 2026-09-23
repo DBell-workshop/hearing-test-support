@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>聴力チェック · サポート</title>
+<style>
+:root { color-scheme: light dark; }
+body {
+  max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+  font: 16px/1.8 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  color: #1c1c1e; background: #fff; line-break: strict; overflow-wrap: break-word;
+}
+@media (prefers-color-scheme: dark) { body { color: #e8e6e3; background: #161514; } }
+h1 { font-size: 1.7rem; margin: 0 0 .3rem; }
+h2 { font-size: 1.15rem; margin: 2.2rem 0 .5rem; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .3rem; }
+.sub { color: #8a8a8e; margin: 0 0 2rem; }
+hr { border: 0; border-top: 1px solid rgba(128,128,128,.25); margin: 2.2rem 0; }
+a { color: #c26a17; }
+@media (prefers-color-scheme: dark) { a { color: #ffb95a; } }
+.box { border: 1px solid rgba(128,128,128,.28); border-radius: 10px; padding: 1rem 1.1rem; margin: 1.2rem 0; }
+.warn { border-color: rgba(200,80,60,.5); }
+ul { padding-left: 1.3rem; }
+li { margin: .35rem 0; }
+</style>
+</head>
+<body>
+
+<h1>聴力チェック · サポート</h1>
+<p class="sub">北京灵可司文化科技有限公司 · <a href="../support.html">中文</a> · <a href="../en/support.html">English</a></p>
+
+<div class="box">
+<p><strong>お困りのときは</strong> <a href="mailto:support@linkos.cc">support@linkos.cc</a> までメールでご連絡ください。iOS のバージョン、お使いのイヤホン、どの画面で問題が起きたかを書いていただけると助かります。</p>
+</div>
+
+<hr>
+
+<h2>よくある質問</h2>
+
+<h3>結果画面に「音響キャリブレーション未実施」と表示されるのはなぜですか？</h3>
+<p>事実だからです。このアプリの相対的な目盛りは正確で、5 dB の差は本当に 5 dB の差です。そのため<strong>曲線の形</strong>（どの周波数が相対的に聞こえにくいか）と、<strong>測定を重ねたときの変化</strong>は信頼できます。系統的な誤差は、差をとると打ち消し合うからです。</p>
+<p>正確でないのは基準点です。0 dB HL が実際にどのくらいの大きさになるかはイヤホンごとの音響特性で変わり、アプリでは推定するしかありません。信頼できる実測のオージオグラム（AirPods Pro での Apple のヒアリングチェックの結果など）があれば、「設定」→「キャリブレーション」から読み込んで基準点を確定できます。</p>
+
+<h3>なぜシステム音量を最大にする必要があるのですか？</h3>
+<p>テスト音の大きさは、音量 100% を前提に逆算しているからです。音量が半分だと、耳に届く音は表示より約 6 dB 小さくなり、画面にはそのことが出ません。下がったのは音量なのに、「聞こえが低下した」曲線ができてしまいます。</p>
+<p>iOS には落とし穴がひとつあります。<strong>音が鳴っていないときに音量ボタンを押すと、着信音の音量が変わります</strong>。確認音が鳴っている間に押してください。</p>
+
+<h3>どのイヤホンが使えますか？</h3>
+<p>大切なのはブランドではなく、耳へのフィットの仕方です。最も適しているのはカナル型（密閉）です。オーバーイヤー型はカナル型と基準が異なるため、結果全体が一定の方向にずれます。開放型（インナーイヤー）は耳の穴をふさがないため低音が漏れます。骨伝導は外耳と中耳を通らないため、測れるのは気導の閾値ではなく、使えません。</p>
+<p>アプリの「設定」→「対応イヤホン」に一覧があります。一覧にないイヤホンでも測定できますが、種類を判別できないため、結果には「大きくずれている可能性あり」と表示されます。</p>
+
+<h3>測定の途中で一時停止できますか？</h3>
+<p>できます。周囲がうるさくなった、音量が変わった、アプリがバックグラウンドに移った、ご自身で一時停止した、といった場合は、それまでの測定を残したまま、条件が戻れば続きから再開できます。</p>
+<p>ただし上限は 10 分です。それを過ぎると、それまでの測定は破棄されます。長く離れると集中が途切れ、気づかないうちにイヤーピースの位置が変わり、部屋の状態も変わっているかもしれないためです。そのまま続けると、前半と後半が同じ測定ではなくなってしまいます。</p>
+<p><strong>イヤホンを外した場合は例外で、その時点で測定は破棄されます。</strong>付け直すと耳へのフィットが変わり、前後のデータを比較できないためです。</p>
+
+<h3>周囲の音チェックで「測定できません」と表示されます</h3>
+<p>AirPods を高音質モードで接続していると、マイク入力を使えません（AirPods のマイクを使うには通話モードに切り替える必要があり、音質が 16 kHz に落ちます。聴力の測定には致命的です）。その場合は iPhone 本体のマイクを使います。それでも測れない場合は、測れないことをそのままお伝えし、部屋が静かかどうかをご自身で確認したうえで続けられるようにしています。</p>
+
+<h3>データはどこに保存されますか？</h3>
+<p>お使いの端末の中だけです。このアプリはインターネットに接続しません。コードにネットワーク機能そのものがありません。アプリを削除するとデータも削除され、「設定」→「データ」からいつでも消去できます。詳しくは<a href="./privacy-policy.html">プライバシーポリシー</a>をご覧ください。</p>
+
+<h3>結果が気になるときは？</h3>
+<div class="box warn">
+<p>次のような症状がある場合は、このアプリの結果にかかわらず、<strong>早めに医療機関を受診してください</strong>。</p>
+<ul>
+<li>突然聞こえにくくなった</li>
+<li>耳の痛み、耳だれ、耳が詰まった感じがある</li>
+<li>めまい、ふらつきがある</li>
+<li>聞こえが良くなったり悪くなったりする</li>
+<li>片方の耳だけ聞こえにくくなった、または片耳だけ耳鳴りがする</li>
+</ul>
+<p>このアプリは聞こえの閾値を測るだけで、これらを見分けることはできません。</p>
+</div>
+
+<hr>
+
+<h2>大切なお知らせ</h2>
+<p>このアプリは医療機器ではありません。聴覚の病気の診断には使えず、専門家による診察や助言の代わりにもなりません。数値は目安です。聞こえについて気になることがあれば、耳鼻咽喉科の医師や言語聴覚士にご相談ください。</p>
+
+<hr>
+<p><a href="./privacy-policy.html">プライバシーポリシー</a> · <a href="mailto:support@linkos.cc">support@linkos.cc</a> · <a href="../support.html">中文</a> · <a href="../en/support.html">English</a></p>
+
+</body>
+</html>
