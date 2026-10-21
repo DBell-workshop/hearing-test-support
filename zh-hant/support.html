@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>聽力自測 · 支援</title>
+<style>
+:root { color-scheme: light dark; }
+body {
+  max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  color: #1c1c1e; background: #fff; word-break: break-word;
+}
+@media (prefers-color-scheme: dark) { body { color: #e8e6e3; background: #161514; } }
+h1 { font-size: 1.7rem; margin: 0 0 .3rem; }
+h2 { font-size: 1.15rem; margin: 2.2rem 0 .5rem; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .3rem; }
+.sub { color: #8a8a8e; margin: 0 0 2rem; }
+hr { border: 0; border-top: 1px solid rgba(128,128,128,.25); margin: 2.2rem 0; }
+a { color: #c26a17; }
+@media (prefers-color-scheme: dark) { a { color: #ffb95a; } }
+.box { border: 1px solid rgba(128,128,128,.28); border-radius: 10px; padding: 1rem 1.1rem; margin: 1.2rem 0; }
+.warn { border-color: rgba(200,80,60,.5); }
+ul { padding-left: 1.3rem; }
+li { margin: .35rem 0; }
+</style>
+</head>
+<body>
+
+<h1>聽力自測 · 支援</h1>
+<p class="sub">北京靈可司文化科技有限公司 · <a href="../support.html">简体中文</a> · <a href="../en/support.html">English</a> · <a href="../ja/support.html">日本語</a></p>
+
+<div class="box">
+<p><strong>需要幫助？</strong>寫信到 <a href="mailto:support@linkos.cc">support@linkos.cc</a>。請附上你的 iOS 版本、耳機型號，以及問題出現在哪一步。</p>
+</div>
+
+<hr>
+
+<h2>常見問題</h2>
+
+<h3>左右聲道驗證顯示「有問題」，之後就點不動了怎麼辦？</h3>
+<div class="box warn">
+<p>這是 1.0.1 的一個缺陷，很抱歉。任一側答過「沒聽到」之後，就再也沒有入口把答案改回來 ——
+即使再點播放、確實也聽見了，底部仍然停在「請先完成左右聲道驗證」。</p>
+<p><strong>已在 1.0.2 修復，請到 App Store 更新。</strong>更新後，重新點那一側的圓圈播放，
+就可以重新作答，不需要退出頁面。</p>
+<p>如果暫時不方便更新：返回首頁、重新點開始測試，驗證狀態會重置，也能重新作答。
+已測資料不受影響 —— 這一步在測試開始之前。</p>
+</div>
+
+<h3>為什麼結果頁寫著「未完成聲學校準，數值僅供參考」？</h3>
+<p>因為這是實話。相對刻度是準的——差 5 分貝就是差 5 分貝，所以<strong>曲線形狀</strong>（哪個頻段相對更弱）和<strong>多次測試之間的變化趨勢</strong>都可信，系統誤差在做差時會被抵消。</p>
+<p>不準的是絕對零點：0 dB HL 到底對應多響，取決於你那副耳機的聲學特性，我們只能估。如果你手上有一份可信的實測聽力圖（例如 AirPods 的官方聽力測試結果），可以在「設定 → 聲學校準」裡匯入，把零點定下來。</p>
+
+<h3>為什麼必須把系統音量調到最大？</h3>
+<p>測試音的大小是按音量 100% 反推出來的。音量降一半，實際放出去的聲音就比標稱值低約 6 分貝，而螢幕上沒有任何跡象——你會拿到一條「聽力下降」的曲線，下降的其實是音量滑塊。</p>
+<p>iOS 有個坑：<strong>沒有聲音在播放時，音量鍵調的是鈴聲音量</strong>，不是媒體音量。請在播放參考音的同時按音量鍵。</p>
+
+<h3>哪些耳機能用？</h3>
+<p>取決於耳機怎麼和耳朵耦合，跟牌子無關。入耳密封式最合適；罩耳頭戴式的參考基準與入耳式不同，結果會有系統性偏移；開放半入耳式不封閉耳道，低頻會漏出去；骨傳導繞過外耳和中耳，測到的根本不是氣導聽閾，不適用。</p>
+<p>應用內「設定 → 支援的耳機」有完整清單。不在清單內的耳機仍然可以測，但我們無法判斷它屬於哪一類，結果會被標註為可能有明顯偏差。</p>
+
+<h3>測試中途能暫停嗎？</h3>
+<p>可以。環境變吵、音量被改、切到後臺，或者你手動按暫停，已測的部分都會保留，條件恢復後接著測。</p>
+<p>但有 10 分鐘上限。超過之後已測資料會作廢——離開太久，注意力已重置、耳塞可能被無意識動過、環境也可能變了，那時接著測，前半場和後半場就不是同一次測量。</p>
+<p><strong>摘下耳機是例外，直接作廢。</strong>重新戴上就是另一副聲學耦合了，前後資料不可比。</p>
+
+<h3>環境檢查顯示「無法檢測環境噪聲」怎麼辦？</h3>
+<p>AirPods 以高音質模式連線時沒有可用的麥克風輸入（要用它的麥克風得切到通話模式，那會把音質降到 16 kHz，對測聽是災難）。這種情況下我們會用手機自帶麥克風；如果仍然拿不到讀數，會如實告訴你測不了，並允許你自行確認環境後繼續。</p>
+
+<h3>我的資料存在哪裡？</h3>
+<p>只存在你這臺裝置上。這個應用不聯網——程式碼裡沒有任何網路請求能力。刪除應用時資料隨之刪除，也可以在「設定 → 資料」裡隨時手動清空。詳見<a href="./privacy-policy.html">隱私政策</a>。</p>
+
+<h3>結果異常，我該怎麼辦？</h3>
+<div class="box warn">
+<p>如果出現以下任一情況，請<strong>儘快就醫</strong>，不要依賴本應用的結果：</p>
+<ul>
+<li>突然發生的聽力下降</li>
+<li>耳痛、流膿或耳悶脹感</li>
+<li>眩暈或平衡障礙</li>
+<li>聽力時好時壞</li>
+<li>只有一隻耳朵變差，或只有一側耳鳴</li>
+</ul>
+<p>本應用只測聽閾，識別不出這些問題。</p>
+</div>
+
+<hr>
+
+<h2>重要宣告</h2>
+<p>本應用不是醫療器材，不能用於診斷聽力疾病，也不能替代聽力專業人士的檢查與意見。測量結果僅供參考。如果你對自己的聽力有疑慮，請諮詢耳鼻喉科醫生或聽力學專業人員。</p>
+
+<hr>
+<p><a href="./privacy-policy.html">隱私政策</a> · <a href="mailto:support@linkos.cc">support@linkos.cc</a> · <a href="../support.html">简体中文</a> · <a href="../en/support.html">English</a> · <a href="../ja/support.html">日本語</a></p>
+
+</body>
+</html>
